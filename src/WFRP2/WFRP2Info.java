@@ -25,10 +25,10 @@ public class WFRP2Info {
     private Race race;
     private Career currentProffession;
     private Career lastProffession;
-    int currentExperience;
-    int totalExperience;
-    String birthPlace;
-    int siblingsCount;
-    String distinguishingMarks;
+    private int currentExperience;
+    private int totalExperience;
+    private String birthPlace;
+    private int siblingsCount;
+    private String distinguishingMarks;
     
 }

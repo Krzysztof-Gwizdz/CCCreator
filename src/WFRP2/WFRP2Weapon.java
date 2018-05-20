@@ -5,14 +5,22 @@
  */
 package WFRP2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author bajur
  */
 public class WFRP2Weapon {
-    String name;
-    int encumbrance;
-    boolean twoHanded;
+    private String name;
+    private int encumbrance;
+    private boolean twoHanded;
+    private Type type;
+    private Group group;
+    private Damage damage;
+    private Reload reload;
+    private List<Qualities> qualities= new ArrayList<Qualities>();
     
     
     //enum section
