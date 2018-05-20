@@ -10,17 +10,17 @@ package charactercreator;
  *
  * @author Krzysztof Gwiżdż
  */
-public class CharacterCard {
-    private BasicInfo basicInfo;
-    private Appearance appearance;
+public abstract class CharacterCard {
+    protected BasicInfo basicInfo;
+    protected Appearance appearance;
 
     
     //constructors section
     
-    public CharacterCard(BasicInfo.Gender gender, String name, String gm, String owner, 
-            Appearance.Eyes eyes, Appearance.Hair hair, int height, int weight){
+    protected CharacterCard(BasicInfo.Gender gender, String name, String gm,
+            String owner){
         basicInfo = new BasicInfo(gender, name, gm, owner);
-        appearance = new Appearance(hair, eyes, height, weight);
+        appearance = new Appearance();
     }
     
 }

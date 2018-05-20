@@ -12,10 +12,16 @@ import charactercreator.CharacterCard;
  * @author bajur
  */
 public class WFRP2Character extends CharacterCard {
+    private WFRP2Info info;
     private WFRP2Stat statistics[]=new WFRP2Stat[16];
     
-    WFRP2Character(BasicInfo.Gender gender, String name, String gm, String owner, 
-            Appearance.Eyes eyes, Appearance.Hair hair, int height, int weight){
-        super(gender, name, gm, owner, eyes, hair, height, weight);
+    public WFRP2Character(BasicInfo.Gender gender, String name, String gm,
+            String owner){
+        super(gender, name, gm, owner);
+    }
+    
+    public void setAppearance(Appearance.Eyes eyes, Appearance.Hair hair,
+            int weight, int height){
+        this.appearance.setEyes(eyes);
     }
 }
