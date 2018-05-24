@@ -3,13 +3,11 @@ package WFRP2;
 import charactercreator.Appearance;
 import charactercreator.CharacterCard;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author bajur
  */
 public class WFRP2Character extends CharacterCard {
+
     public static enum Race {
         human, elf, dwarf, hafling, gnlome, ogre, orc,
         goblin
@@ -25,13 +23,13 @@ public class WFRP2Character extends CharacterCard {
         //TO DO
     }
 
-    private WFRP2Info info;
     private WFRP2Stat statistics[] = new WFRP2Stat[16];
     private Race race;
     private Career currentProffession;
     private Career lastProffession;
     private int currentExperience;
     private int totalExperience;
+    private int[] combatMovement = new int[3];
     private String birthPlace;
     private int siblingsCount;
     private String distinguishingMarks;
